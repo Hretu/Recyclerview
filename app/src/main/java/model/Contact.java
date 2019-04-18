@@ -1,7 +1,9 @@
-package com.view;
+package model;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.view.R;
 
 public class Contact extends AppCompatActivity {
     private String name;
