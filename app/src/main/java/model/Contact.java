@@ -9,6 +9,29 @@ public class Contact extends AppCompatActivity {
     private String name;
     private String phoneNo;
     private int imageID;
+    private String Email;
+    private  String Address;
+
+    public Contact(String email, String address) {
+        Email = email;
+        Address = address;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String address) {
+        Address = address;
+    }
 
     public String getName() {
         return name;
@@ -34,10 +57,12 @@ public class Contact extends AppCompatActivity {
         this.imageID = imageID;
     }
 
-    public Contact(String name, String phoneNo, int imageID) {
+    public Contact(String name, String phoneNo, int imageID, String Email, String Address) {
         this.name = name;
         this.phoneNo = phoneNo;
         this.imageID = imageID;
+        this.Email = Email;
+        this.Address = Address;
     }
 
     @Override
